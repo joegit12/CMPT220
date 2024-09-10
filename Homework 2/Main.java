@@ -1,6 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
+        
 
         //for this section: are these all printing the best option? If they aren't, fix it!
         //(However you interpret 'fix' is fine i promise, any way you fix it shows you get the concept to me)
