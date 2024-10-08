@@ -6,16 +6,17 @@ public class loopsPractice {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter number please");
-        Int userNumber = sc.nextInt();
-        int sum = 0;
-        while (userNumber >= 0){
-            sum >= userNumber;
-            //sum = sum + userNumber
-            System.out.println("Enter again");
+       System.out.println("Enter a string and I will reverse it");
+       String usrInp = sc.nextLine();
+       String reverse = "";
+        char ch;
+        for(int i = 0; i < usrInp.length(); i++){
+            ch = usrInp.charAt(i);
+            System.out.println("Char acquired was:" + ch);
+            reverse = ch + reverse;
+            System.out.println("Reversed string at index" + i+ " is " + reverse);
         }
-Systemout.println(sum);
-
+        System.out.println(reverse);
 
 
 
