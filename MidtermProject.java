@@ -4,46 +4,50 @@ public class MidtermProject{
     Scanner dealsc = new Scanner(System.in);
 
     // These are the values of all the cases in the game
-int case1 = 10;
-int case2 = 20;
-int case3 = 50;
-int case4 = 100;
-int case5 = 200;
-int case6 = 500;
-int case7 = 1000;
-int case8 = 1500;
-int case9 = 2000;
-int case10 = 3000;
-int case11 = 5000;
-int case12 = 10000;
-int case13 = 25000;
-int case14 = 50000;
-int case15 = 75000;
-int case16 = 100000;
-int case17 = 250000;
-int case18 = 500000;
-int case19 = 750000;
-int case20 = 1000000;
-int case21 = 1500000;
-int case22 = 2000000;
-int case23 = 2500000;
-int case24 = 3000000;
-int case25 = 3500000;
-int case26 = 5000000;
+int [] cases = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26};
+int [] values = {5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130};
+String pickedFirstCase = "";
+int pickedFirstValue = 0;
 
-int userCase = dealsc.nextInt();
+System.out.println("Choose your first case");
+String firstCase =  dealsc.nextLine();
+if (firstCase.equals("one")){
+    pickedFirstCase = "One";
+    pickedFirstValue = values[0];
+    cases[0] = 0;
+    values[0] = 0;
 
 
+for (int i = 0; i <= 6; i++){
+    System.out.println("Pick your next case");
+    for (int j = 0; j <= cases.length; j++){
+        if(cases[j] != 0){
+            System.out.print(cases[j] + ",");
+        }
+    }
+    
+    String nextCase = sc.nextLine();
+    if(nextCase.equals("Twenty-two") && values[21] !=0){
+        cases[21] = 0;
+        values[21] = 0;
+    }
+}
 
+//banker suggests $
+//banker offer? or keep going?
 
-
-
-
-
+//if yes
+    //print CONGRATS
 
 
 
 
 
 
+
+
+
+
+
+}
 }
