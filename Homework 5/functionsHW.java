@@ -7,13 +7,30 @@ feel free to google some inspiration though :)
 import java.util.Scanner;
 public class functionsHW {
     public static void main(String[] args) {
-    Scanner lattesc = new Scanner(System.in);
-    String pleaseLatte = lattesc.nextline();
-    String yourLatteChoice = pleaseLatte;
+
+        Scanner lattesc = new Scanner(System.in);
+        System.out.print("Enter what kind of latte would you like: ");
+        String pleaseLatte = lattesc.nextLine();
+        
+        Double lattePrice = yourLatteChoice(pleaseLatte);
+        if (lattePrice == 0){
+            System.out.println("Your choice is unavailable. Please choose another.");
+        } else {
+            System.out.println("Your " + pleaseLatte  + "is " + lattePrice);
+        }
+        
     }
    
-    public static void yourLatteChoice(String choice){
-        System.out.println("Yes, I would like a latte");
+    public static Double yourLatteChoice(String choice){
+       if (choice.equals("Chocolate") ) {
+        return 7.00;
+       } else if (choice.equals("Vanilla")){
+        return 6.50;
+       } else if (choice.equals("Regular")){
+        return 5.00;
+       } else {
+        return 0.0;
+       }
 
 
     }

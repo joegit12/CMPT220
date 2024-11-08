@@ -33,10 +33,11 @@ public class FunctionLecture2 {
     }
 
     public static String xycoordinate(String x, String y){
-        return("("+x+"")")
+        return("("+x+"")
     }
 
     }
+    
 
 
 
