@@ -75,7 +75,6 @@ System.out.println(var -= 10);
 //System.out.println(var);
 System.out.println(var *= 2);
 System.out.println(var /= 4);
-*/
 int var = 20;
 String result = (var > 20) ? ("You are of age to drink"): ("You are not of age to drink"); 
 System.out.println(result);

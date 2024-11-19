@@ -7,12 +7,16 @@ check each of the students in main
 and see if any students match that id, if they do they get free lunch that day, yay!) compare a randomly generated id and the
 id of the student to print the appropriate response.
  */
-public class student{
+
+public class Student {
     String name;
     String year;
     double gpa;
     int id;
-    public student(String n, String y, double g, int i){
+  
+
+
+    public Student(String n, String y, double g, int i){
         name = n;
         year = y;
         gpa = g;
@@ -20,8 +24,20 @@ public class student{
     }
     
     //new method
-
+    public void honorRoll(){
+        if(this.gpa > 3.6){
+            System.out.println(this.name + " is an honor student");
+        } else {
+            System.out.println(this.name + " is not an honor student");
+        }
+    }
     
     //new method
-
+    public void freeLunch(){
+        if(this.id == 2017){
+            System.out.println(this.name + " you get a free lunch");
+        } else {
+            System.out.println(this.name + " you do not get a free lunch");
+        }
+    }
 }
